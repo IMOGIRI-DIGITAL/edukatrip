@@ -1,6 +1,6 @@
 .carousel-wrap {
-    width: 635px;
-    height: 323px;
+    width: 100%;
+   
     margin: 0 auto;
     position: relative;
   }
@@ -23,10 +23,14 @@
   }
   
   .carousel > li {
+    width: 100%;
     display: inline-block;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+  }
+  .carousel > li > img {
+    width: 100%;
   }
   @media (min-width: 768px) and (max-width: 991px) {
     .carousel > li {
@@ -50,7 +54,7 @@
   }
   
   .main-pos {
-    margin-left: 2em !important;
+    margin-left: 0em !important;
     z-index: 3000;
   }
   @media (min-width: 768px) and (max-width: 991px) {
@@ -67,7 +71,7 @@
   .left-pos {
     background: #ccc;
     opacity: .5;
-    margin-left: -7em !important;
+    margin-left: -12em !important;
     z-index: 1000;
     -webkit-transform: scale(0.75);
     -moz-transform: scale(0.75);
@@ -101,7 +105,7 @@
   
   .right-pos {
     opacity: .5;
-    margin-left: 10em !important;
+    margin-left: 12em !important;
     z-index: 1000;
     -webkit-transform: scale(0.75);
     -moz-transform: scale(0.75);
@@ -141,25 +145,9 @@
   .slider i {
     font-size: 45px;
   }
-  .slider #prev,
-  .slider #next {
-    position: absolute;
-  }
-  .slider #prev {
-    left: -74px;
-  }
   @media (min-width: 768px) and (max-width: 1199px) {
-    .slider #prev {
-      left: -180px;
-    }
   }
   @media (max-width: 767px) {
-    .slider #prev {
-      left: -70px;
-    }
-  }
-  .slider #next {
-    right: 88px;
   }
   @media (min-width: 768px) and (max-width: 1199px) {
     .slider #next {

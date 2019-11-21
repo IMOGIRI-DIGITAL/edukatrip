@@ -1,14 +1,4 @@
-//slideshow style interval
-var autoSwap = setInterval( swap,7000);
 
-//pause slideshow and reinstantiate on mouseout
-$('.carousel, .slider').hover(
-  function () {
-    clearInterval(autoSwap);
-}, 
-  function () {
-   autoSwap = setInterval( swap,7000);
-});
 
 //global variables
 var items = [];
