@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Booking</title>
+        <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" type="text/css" href="assets/css/price-range.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/radio-button.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.css">
+</head>
+<body>
+
+        <nav style="background:#f7f7f7!important;box-shadow: 0 2px 4px -1px rgba(0,0,0,0.25)!important;padding:15px;" class="navbar navbar-expand-md bg-white mb-4">
+          <div class="container">
+            <a class="navbar-brand" href="#">Top navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="padding-left: 100px;;position:static;" class="collapse navbar-collapse btn-sect" id="navbarCollapse">
+              
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Travel History </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">My Booking <span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                  <form class="form-inline mt-2 mt-md-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+              </nav>
+              <div style="z-index: -1;position: relative;top: -150px;background:#0099ff;">
+                  <div style="z-index: -1;position: relative;top: 200px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,192L48,176C96,160,192,128,288,138.7C384,149,480,203,576,213.3C672,224,768,192,864,170.7C960,149,1056,139,1152,149.3C1248,160,1344,192,1392,208L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                  </div>
+                </div>
+            <div class="container">
+                <div class="content">
+                    <h3 class="text-white">Find your best  Educational tour package</h3><br>
+                    <div class="row">
+                      <div class="col-3">
+                          <div class="card">
+                              <div class="row justify-content-center">
+                                  <div class="col-6">
+                                   <b>Educational tour </b> 
+                                  </div>
+                                  <div class="col-4 btn-show">
+                                      <a href="#">Show All</a>
+                                    </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="row justify-content-center">
+                                        <div class="col-6">
+                                            <div class="form-check">
+                                                <input class="radio-btn form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                                <label class="form-check-label" for="exampleRadios1">
+                                                  Default radio
+                                                </label>
+                                          </div>
+                                      </div>
+                                      <div class="col-6">
+                                          <div class="form-check">
+                                              <input class="radio-btn form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                              <label class="form-check-label" for="exampleRadios1">
+                                                Default radio
+                                              </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-check">
+                                            <input class="radio-btn form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="exampleRadios1">
+                                              Default radio
+                                            </label>
+                                      </div>
+                                  </div>
+                                  <div class="col-6">
+                                      <div class="form-check">
+                                          <input class="radio-btn form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                          <label class="form-check-label" for="exampleRadios1">
+                                            Default radio
+                                          </label>
+                                    </div>
+                                </div>
+                                  </div>
+                            </div>
+                            
+                          </div><br>
+                          <div class="filter-result">
+                              <div class="card">
+                                  <div class="row justify-content-start">
+                                      <div class="col-6">
+                                      <b>Filter Result</b>
+                                      </div>
+                                      <div class="col-4 btn-show">
+                                          <a href="#">Reset Filter</a>
+                                      </div><br><br>
+                                      <div class="col-6">
+                                      <b>Price Range</b>
+                                      </div>
+                                      <div class="col-4 btn-show"></div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="input-group">
+                                          <input class="price-range js-input-from" type="text" aria-label="First name" class="form-control" placeholder="Rp.0">
+                                          <hr>
+                                          <input class="price-range js-input-to" type="text" aria-label="First name" class="form-control" placeholder="Rp.10.000.000">
+                                      </div>
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="wrapper" style="padding:20px;">
+                                          <div class="range-slider">
+                                              <input type="text" class="js-range-slider" value="" />
+                                          </div>
+                                          <hr>
+                                          </div>
+                                  </div>
+                                  <!-- Date Picker Section -->
+                                  <div class="col-12">
+                                  <div class="row">
+                                      <div class="col-6">
+                                          <div class="date-from">
+                                              <div class="date-title">
+                                              <b>From</b>
+                                              </div>
+                                              <div class="input-group">
+                                                  <input class="date-range " type="date" aria-label="First name" class="form-control" placeholder="Rp.0">
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="col-6">
+                                          <div class="date-from">
+                                          <div class="date-title">
+                                              <b>To</b>
+                                          </div>
+                                          <div class="input-group">
+                                              <input class="date-range " type="date" aria-label="First name" class="form-control" placeholder="Rp.0">
+                                          </div>
+                                      </div>
+                                      </div>
+                                  </div>
+                                  </div>
+                 
+                          <!-- Filter Content Search -->
+                         </div>
+                          </div><br>
+                          <div class="own-tour">
+                            <div class="card">
+                              <b>Create my own tour</b><br>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac viverra sem, at viverra elit. Donec dignissim aliquet mauris. Ut vehicula magna eget venenatis viverra. Aenean consequat quam sed dui ultricies varius congue nec urnan</p><br>
+                              <a class="btn btn-outline-primary btn-tour" href="">Create Tour</a>
+                            </div>
+                          </div>
+                      <!-- END ROW LEFT SECTION -->
+                        </div>
+                      <div class="col-9 result">
+                        <div class="trip-section">
+                            <div class="tour-search">
+
+                                      <div class="form-group has-search">
+                                          <span class="fa fa-search form-control-feedback"></span>
+                                          <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                  
+                              </div>
+                              <div class="tour-list">
+                                <h4 class="text-white">Best Rated Educational Tour</h4><br><br>
+                                <div class="tour-card">
+                                  <div class="row">
+                                    <div class="col-3">
+                                      <img class="tour-card-image" src="assets/gambar/1.png" alt="test">
+                                    </div>
+                                    <div class="col-5 desc-tour">
+                                      <b>Institut Teknologi Bandung</b>
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta amet reprehenderit accusantium modi temporibus </p><br>
+                                      <p>Institut</p>
+                                      <p>Five Days tour</p>
+                                    </div>
+                                    <div class="col-4 preview-tour">
+                                      <div class="rating">
+                                      <span class="fa fa-star">&nbsp;</span><b>4.7</b><span>(235)</span>
+                                      </div>
+                                      <div class="price">
+                                        <strike> Rp.6.000.000</strike>
+                                        <b class="orange-text">Rp.5.400.000</b>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+            </div>
+<div class="footer">
+  <div style="z-index: -1;bottom:-50px;position: relative;">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0099ff" fill-opacity="1" d="M0,128L26.7,112C53.3,96,107,64,160,58.7C213.3,53,267,75,320,85.3C373.3,96,427,96,480,80C533.3,64,587,32,640,21.3C693.3,11,747,21,800,32C853.3,43,907,53,960,69.3C1013.3,85,1067,107,1120,133.3C1173.3,160,1227,192,1280,176C1333.3,160,1387,96,1413,64L1440,32L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg> 
+  </div>     
+    <div class="box-footer">  
+    <div class="container">  
+      <div class="logo-footer">
+            <!-- <img src="" alt=""> --> <h1>Logo</h1>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+<style>
+  .content{
+    top:-270px; 
+    position: relative;
+  }
+  .trip-section{
+
+    margin-left:100px;
+    padding:10px;
+  }
+  .rating{
+    padding-top: 20%;
+    padding-left:35%;
+  }
+  .price{
+    padding-top: 70px;
+    padding-left:30%;
+  }
+  .desc-tour{
+    padding-right: 10px;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  .tour-card{ 
+    width: 100%;
+    height: 220px;
+    box-shadow: 3px 4px 34px 6px rgba(0,0,0,0.33);
+    background: white;
+    border-radius: 5px;
+  }
+  .tour-card-image{
+    width: 220px;
+    padding-right: 20px;
+    height: 220px;
+    position: relative;
+     border-radius:10px 0 0 10px;
+     background-repeat: no-repeat;
+  }
+  .date-from{
+    margin:10px;
+    padding: 10px;
+    font-size:12px;
+    border-radius: 5px;
+    border:1px solid grey;
+  }
+  .radio-btn{
+    border:1px solid darkblue;
+  }
+  .has-search{
+   
+  }
+  .has-search .form-control {
+    padding-left: 2.375rem;
+    margin:-5px;
+    box-shadow: 3px 4px 34px 6px rgba(0,0,0,0.33);
+    
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+  .btn-tour{
+    width:150px;
+  }
+  .btn-show{
+    margin-left: 30px;
+    float: right;
+    text-align: right;
+    position: inherit;
+    font-size: 14px;
+  }
+    .card{
+      margin-left: -10px;
+      margin-right: -30px;
+      padding: 20px;
+      background:white;
+      border-radius: 20px;
+    }
+    .card .row{
+      padding: 10px;
+    }
+    .bg-white{
+        background:whitesmoke !important;
+    }
+    .box-footer{
+        background:#304ffe ;
+        height:140px;
+    }
+    .price-range{
+      width: 125px;
+      border:1px solid grey;
+      border-radius: 20px;
+      font-size: 14px;
+      text-align: left;
+      padding:6px;
+
+    }
+    .date-range{
+      border:0px;
+      width: 110px;
+    }
+    .text-white{
+      color:white;
+    }
+
+</style>
+</html>
+<script src="assets/bootstrap/js/jquery.js"></script>
+<script src="assets/bootstrap/js/popper.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.js"></script>
+<script src='https://github.com/mattbryson/TouchSwipe-Jquery-Plugin/blob/master/jquery.touchSwipe.min.js'></script>
+<script  src="assets/js/slider.js"></script>
+<script  src="assets/js/range-slider.js"></script>
