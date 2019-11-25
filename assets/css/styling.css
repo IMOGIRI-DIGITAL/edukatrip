@@ -73,8 +73,6 @@
 
 	input[type="text"] {
 	  margin-bottom: -1px;
-	  border-bottom-left-radius: 0;
-	  border-bottom-right-radius: 0;
 	}
 
 	input[type="password"] {
@@ -161,7 +159,7 @@
     .price-range{
       width: 125px;
       border:1px solid grey;
-      border-radius: 20px;
+      border-radius: 6px;
       font-size: 14px;
       text-align: left;
       padding:6px;
