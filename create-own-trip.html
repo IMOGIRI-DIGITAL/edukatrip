@@ -63,29 +63,55 @@
                 </div>
             </li>
             <li>
-                <div class="row">
-                    <div class="col-sm">
-                        <img class="col-12" src="assets/1.PNG" style="height: 50%;border-radius:20px;border:1px solid black;" alt="">
+                <div class="row ">
+                    <div class="col-sm ">
+                        <div class="mainflip">
+                            <div class="frontside">
+                                <div class="card new-tour">
+                                    <div class="w-100 card-body text-center">
+                                        <!-- <p><img class=" img-fluid" src="https://sunlimetech.com/portfolio/boot4menu/assets/imgs/team/img_01.png" alt="card image"></p> -->
+                                        <a class="btn btn-white" href="#"><i class="btn btn-primary rounded-circle fa fa-plus"></i>
+                                            <h1 class="card-title"><span class="w-50"> Add More </span></h1>
+                                            <h1 class="card-title"><span class="w-50"> Destination </span></h1>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="col-sm ml-4 pl-1 text-justify">
-                        <p>09.30 - 12.00 </p>
-                        <h4>Farm House Lembang Bandung</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis debitis magni quidem, eos consequatur veniam nam!</p>
-                        <h5 class="mt-5 pt-5"><a href class="sticky-bottom text-dark">
-                                View Details
-                            </a></h5>
+
                     </div>
                 </div>
             </li>
         </ul>
     </div>
     <div class="bg-info">
-        s
+
     </div>
-    <footer class="navbar footer sticky-bottom footer-light">
-        content...
-    </footer>
-    </footer>
+    <div class="pricetag">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="">
+                <a class="text-dark" href="#"><b>Total Cart</b></a><br>
+                <p class="text-orange"><b>Rp.130.0000</b></p>
+            </div>
+            <ul class="d-flex justify-content-between align-items-center">
+                <li>
+                    <a href="#" class="btn btn-white btn-icon btn-icon-left d-flex align-items-center">
+                        <i class="material-icons">save</i>
+                        <span>Save for Later</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn btn-orange text-light btn-icon btn-icon-left d-flex align-items-center">
+                        <span>Create Tour</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
     <script src="assets/bootstrap/js/jquery.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -147,6 +173,10 @@
         border: 1px solid grey;
     }
 
+    .new-tour {
+        border: 7px dotted navy;
+    }
+
     .radio-btn {
         border: 1px solid darkblue;
     }
@@ -159,6 +189,22 @@
         margin: -5px;
         box-shadow: 3px 4px 34px 6px rgba(0, 0, 0, 0.33);
 
+    }
+
+    .btn-orange {
+        background: orangered;
+        padding: 10px;
+    }
+
+    .pricetag {
+        width: 100%;
+        background: whitesmoke;
+        bottom: -10px;
+        position: fixed;
+    }
+
+    .pricetag ul li {
+        list-style: none;
     }
 
     .box-footer {
